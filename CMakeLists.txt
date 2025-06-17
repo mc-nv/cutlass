@@ -697,6 +697,7 @@ target_include_directories(
   $<INSTALL_INTERFACE:include>
   $<BUILD_INTERFACE:${CUTLASS_INCLUDE_DIR}>
   $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include>
+  $<BUILD_INTERFACE:CUDAToolkit_INCLUDE_DIR}/cccl>
   )
 
 # Mark CTK headers as system to supress warnings from them
